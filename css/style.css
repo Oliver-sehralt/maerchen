@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Literata|Montserrat|Roboto|Sriracha|Zhi+Mang+Xing&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Zhi Mang Xing', cursive;
+}
+
+header {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    padding: 2em;
+}
+
+.maerchen {
+    position: relative;
+    height: 400px;
+    background-color: #333333;
+}
+
+.maerchen > * {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.maerchen .image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.maerchen .text {
+    position: absolute;
+    padding: 2em;
+    color: white;
+    font-size: 2em;
+}
+
+.maerchen:nth-child(odd) .image {
+    left: 0;
+    right: 50vw;
+}
+
+.maerchen.maerchen:nth-child(even) .image {
+    left: 50vw;
+    right: 0;
+}
+
+.maerchen:nth-child(even) .text {
+    left: 0;
+    right: 50vw;
+}
+
+.maerchen.maerchen:nth-child(odd) .text {
+    left: 50vw;
+    right: 0;
+}
+
+.maerchen:nth-child(1) .image {
+    background-image: url(https://media.giphy.com/media/HuVCpmfKheI2Q/source.gif);
+}
+
+.maerchen:nth-child(2) .image {
+    background-image: url(https://media.giphy.com/media/j7wBU7aHcKf7y/source.gif);
+}
